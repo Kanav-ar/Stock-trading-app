@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isDark,setIsDark] = useState(true);
   return (
     <>
-      <div className="flex items-center pl-46 py-6 shadow dark:bg-black transition-all duration-1000">
+      <div className="fixed top-0 flex items-center pl-46 py-6 shadow dark:bg-black transition-all duration-1000">
         <div className="flex-1">
           <img src={logo} alt="logo" className="w-32.25" />
         </div>
