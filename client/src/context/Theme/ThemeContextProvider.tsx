@@ -6,8 +6,9 @@ export default function ThemeContextProvider({
 }: {
   children: ReactNode;
 }) {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
   function toggleTheme() {
+    document.documentElement.classList.toggle("dark")
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
   }
   return (
