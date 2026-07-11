@@ -14,19 +14,19 @@ export default function Navbar() {
           id="nav-tags"
           className="flex flex-1 justify-center space-x-14 dark:text-white text-gray-800"
         >
-          <a href="" className=" hover:text-blue-500 pointer-cursor">
+          <a href="" className = "hover:text-blue-500 pointer-cursor">
             Signup
           </a>
-          <a href="" className=" hover:text-blue-500 pointer-cursor">
+          <a href="" className = "hover:text-blue-500 pointer-cursor">
             About
           </a>
-          <a href="" className=" hover:text-blue-500 pointer-cursor">
+          <a href="" className = "hover:text-blue-500 pointer-cursor">
             Products
           </a>
-          <a href="" className=" hover:text-blue-500 pointer-cursor">
+          <a href="" className = "hover:text-blue-500 pointer-cursor">
             Pricing
           </a>
-          <a href="" className=" hover:text-blue-500 pointer-cursor">
+          <a href="" className = "hover:text-blue-500 pointer-cursor">
             Support
           </a>
 
