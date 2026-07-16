@@ -1,6 +1,5 @@
 import homeHero from "../../assets/homeHero.png";
 import darkModeHero from "../../assets/darkmodehomehero.png";
-import OpenAccount from "../common/OpenAccount";
 import useTheme from "../../context/Theme/themeContext";
 import BlueBtn from "../common/BlueBtn";
 
@@ -8,7 +7,7 @@ export default function Hero() {
   const { theme } = useTheme();
   return (
     <>
-      <div className="flex min-h-screen flex-col items-center dark:bg-[#070d17] transition-all duration-1000" >
+      <div className="flex min-h-screen flex-col items-center dark:bg-[#070d17] transition-all duration-1000">
         <div className="max-w-7xl pt-8">
           <img
             src={theme === "dark" ? darkModeHero : homeHero}
