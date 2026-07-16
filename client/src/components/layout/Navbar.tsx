@@ -6,43 +6,46 @@ export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
   return (
     <>
-      <div className="w-full bg-white flex items-center pl-46 py-6 shadow fixed top-0 dark:bg-black transition-all duration-1000">
-        <div className="flex-1">
+      <nav className="w-full z-50 sticky top-0 bg-white flex items-center lg:px-12 md:px-10 min-h-20 shadow dark:shadow-white dark:bg-gray-950 transition-all duration-1000">
+        <div className="flex-2 px-4 md:px-8 lg:px-16 xl:px-32">
           <img src={logo} alt="logo" className="w-32.25" />
         </div>
         <div
           id="nav-tags"
-          className="flex flex-1 justify-center space-x-14 dark:text-white text-gray-800"
+          className="flex flex-1 justify-center space-x-10 dark:text-white text-gray-800 lg:flex hidden "
         >
-          <a href="" className = "hover:text-blue-500 pointer-cursor">
+          <a href="" className="hover:text-blue-500 cursor-pointer">
             Signup
           </a>
-          <a href="" className = "hover:text-blue-500 pointer-cursor">
-            About
+          <a href="" className="hover:text-blue-500 cursor-pointer">
+            About 
           </a>
-          <a href="" className = "hover:text-blue-500 pointer-cursor">
+          <a href="" className="hover:text-blue-500 cursor-pointer">
             Products
           </a>
-          <a href="" className = "hover:text-blue-500 pointer-cursor">
+          <a href="" className="hover:text-blue-500 cursor-pointer">
             Pricing
           </a>
-          <a href="" className = "hover:text-blue-500 pointer-cursor">
+          <a href="" className="hover:text-blue-500 cursor-pointer">
             Support
           </a>
-
-          <Menu />
         </div>
-        <button
-          className="mx-16 rounded-full p-2 cursor-pointer hover:bg-black/20 dark:text-white dark:hover:bg-white/20"
-          onClick={toggleTheme}
-        >
-          {theme === "dark" ? (
-            <Moon strokeWidth={2.5} />
-          ) : (
-            <Sun strokeWidth={2.5} />
-          )}
-        </button>
-      </div>
+
+        <div className="flex items-center md:space-x-8 lg:space-x-10 space-x-4 lg:px-12 px-4">
+          <Menu className=" dark:text-white" />
+          <button
+            className="p-2 rounded-full cursor-pointer hover:bg-gray-950/20 dark:text-white dark:hover:bg-white/20"
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+          >
+            {theme === "dark" ? (
+              <Sun strokeWidth={2.5} />
+            ) : (
+              <Moon strokeWidth={2.5} />
+            )}
+          </button>
+        </div>
+      </nav>
     </>
   );
 }
