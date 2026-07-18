@@ -3,7 +3,7 @@ import Awards from "../components/home/Awards";
 import Education from "../components/home/Education";
 import Hero from "../components/home/Hero";
 import Pricing from "../components/home/Pricing";
-import Stats from "../components/home/Stats";
+import Stats from "../components/home/Stats/Index";
 
 export default function Home() {
   return (
