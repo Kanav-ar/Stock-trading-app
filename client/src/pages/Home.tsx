@@ -1,6 +1,6 @@
 import OpenAccount from "../components/common/OpenAccount";
 import Awards from "../components/home/Awards";
-import Education from "../components/home/Education";
+import Education from "../components/home/Education/Education";
 import Hero from "../components/home/Hero";
 import Pricing from "../components/home/Pricing/Index";
 import Stats from "../components/home/Stats/Index";
@@ -11,9 +11,6 @@ export default function Home() {
     <>
       <Section>
         <Hero />
-      </Section>
-      <Section>
-        <Awards />
       </Section>
       <Section>
         <Stats />
