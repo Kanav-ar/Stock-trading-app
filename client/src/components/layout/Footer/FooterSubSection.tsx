@@ -21,6 +21,8 @@ export default function FooterSubSection({
           <a
             key={link.text}
             href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-gray-600 hover:text-[#387ed1] dark:text-gray-300"
           >
             {link.text}

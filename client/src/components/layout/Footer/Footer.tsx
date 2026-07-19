@@ -7,7 +7,9 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 
-import logo from '../../../assets/logo.svg'
+import logo from "../../../assets/logo.svg";
+import playstore from "../../../assets/googlePlayBadge.svg";
+import appstore from "../../../assets/appstoreBadge.svg";
 
 export const accountLinks = [
   { text: "Open demat account", href: "#" },
@@ -63,21 +65,49 @@ export default function Footer() {
             © 2010 - 2026, Zerodha Broking Ltd. All rights reserved.
           </p>
           <div className="flex gap-4 text-xl">
-            <FaXTwitter />
-            <FaFacebook />
-            <FaInstagram />
-            <FaLinkedin />
+            <a
+              href="https://x.com/zerodha"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#387ed1]"
+            >
+              <FaXTwitter />
+            </a>
+            <a
+              href="https://facebook.com/zerodha.social"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#387ed1]"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://instagram.com/zerodhaonline/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#387ed1]"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://linkedin.com/company/zerodha"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#387ed1]"
+            >
+              <FaLinkedin />
+            </a>
           </div>
-          <hr className="md:max-w-60 text-gray-200"/>
+          <hr className="md:max-w-60 text-gray-200" />
           <div className="text-xl">
             <FaYoutube />
           </div>
-          <div>
-            <img src="" alt="playstore" />
-            <img src="" alt="appstore" />
+          <div className="flex gap-4">
+            <img className="w-20 lg:w-25" src={playstore} alt="playstore" />
+            <img className="w-20 lg:w-25" src={appstore} alt="appstore" />
           </div>
         </div>
-        <div className="flex md:flex-row flex-col flex-3 gap-8 lg:gap-12 xl:gap-16">
+        <div className="flex md:flex-row flex-col flex-3 gap-8 lg:gap-12 xl:gap-16 lg:pt-0 lg:pb-0 pt-16 pb-8">
           <FooterSubSection heading="Account" links={accountLinks} />
 
           <FooterSubSection heading="Support" links={supportLinks} />
@@ -87,7 +117,6 @@ export default function Footer() {
           <FooterSubSection heading="Quick links" links={quickLinks} />
         </div>
       </div>
-
 
       <div className="flex flex-col mx-auto text-xs gap-4 max-w-7xl px-4 sm:px-6 lg:px-8">
         <p>
@@ -164,16 +193,82 @@ export default function Footer() {
           are regulated by the Reserve Bank of India (RBI).
         </p>
       </div>
-      <div className="flex">
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+      <div className="flex flex-wrap gap-4 justify-center max-w-5xl mx-auto ">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#387ed1]"
+          href="https://www.nseindia.com/"
+        >
+          NSE
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#387ed1]"
+          href="http://bseindia.com/"
+        >
+          BSE
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#387ed1]"
+          href="https://www.mcxindia.com/"
+        >
+          MCX
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#387ed1]"
+          href="https://mseindia.com/"
+        >
+          Terms & conditions
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#387ed1]"
+          href=""
+        >
+          Policies & procedures
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#387ed1]"
+          href=""
+        >
+          Privacy policy
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#387ed1]"
+          href=""
+        >
+          Disclosure
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#387ed1]"
+          href=""
+        >
+          For Investor's attention
+        </a>
+        <a className="hover:text-[#387ed1]" href="">
+          Investor charter
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#387ed1]"
+          href=""
+        >
+          Sitemap
+        </a>
       </div>
     </div>
   );
