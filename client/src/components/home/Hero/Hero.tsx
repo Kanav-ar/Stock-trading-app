@@ -1,7 +1,7 @@
-import homeHero from "../../assets/homeHero.png";
-import darkModeHero from "../../assets/homehero-dm.png";
-import useTheme from "../../context/Theme/themeContext";
-import BlueBtn from "../common/BlueBtn";
+import homeHero from "../../../assets/homeHero.png";
+import darkModeHero from "../../../assets/homehero-dm.png";
+import useTheme from "../../../context/Theme/themeContext";
+import BlueBtn from "../../common/BlueBtn";
 
 export default function Hero() {
   const { theme } = useTheme();
