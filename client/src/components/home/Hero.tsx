@@ -7,8 +7,8 @@ export default function Hero() {
   const { theme } = useTheme();
   return (
     <>
-      <div className="flex flex-col items-center dark:bg-[#070d17] transition-all duration-1000 pt-8 pb-16">
-        <div className="max-w-7xl pt-8">
+      <div className="flex flex-col items-center">
+        <div className="max-w-7xl">
           <img
             src={theme === "dark" ? darkModeHero : homeHero}
             alt="Home hero"

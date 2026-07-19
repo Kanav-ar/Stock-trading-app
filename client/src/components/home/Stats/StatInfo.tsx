@@ -1,9 +1,11 @@
+import type { ReactNode } from "react";
+
 export default function StatInfo({
   title,
   description,
 }: {
   title: string;
-  description: string;
+  description: ReactNode;
 }) {
   return (
     <div className="">

@@ -1,3 +1,7 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  @apply bg-white dark:bg-[#070d17] transition-all duration-1000;
+}
