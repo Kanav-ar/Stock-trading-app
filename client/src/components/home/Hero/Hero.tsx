@@ -1,5 +1,5 @@
-import homeHero from "../../../assets/homeHero.png";
-import darkModeHero from "../../../assets/homehero-dm.png";
+import homeHero from "../../../assets/HomeHero.png";
+import darkModeHero from "../../../assets/HomeHero-dm.png";
 import useTheme from "../../../context/Theme/themeContext";
 import BlueBtn from "../../common/BlueBtn";
 

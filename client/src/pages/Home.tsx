@@ -1,5 +1,4 @@
 import OpenAccount from "../components/common/OpenAccount";
-import Awards from "../components/home/Awards";
 import Education from "../components/home/Education/Education";
 import Hero from "../components/home/Hero/Hero";
 import Pricing from "../components/home/Pricing/Index";
