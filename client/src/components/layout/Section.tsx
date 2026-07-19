@@ -11,7 +11,7 @@ export default function Section({
   className = "",
 }: SectionProps) {
   return (
-    <section className={`py-10 ${className}`}>
+    <section className={`py-16 text-gray-700 dark:text-gray-100 ${className}`}>
       <Container>{children}</Container>
     </section>
   );

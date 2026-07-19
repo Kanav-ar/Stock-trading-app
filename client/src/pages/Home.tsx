@@ -2,9 +2,9 @@ import OpenAccount from "../components/common/OpenAccount";
 import Awards from "../components/home/Awards";
 import Education from "../components/home/Education";
 import Hero from "../components/home/Hero";
-import Pricing from "../components/home/Pricing";
+import Pricing from "../components/home/Pricing/Index";
 import Stats from "../components/home/Stats/Index";
-import Section from "../components/layout/Sections";
+import Section from "../components/layout/Section";
 
 export default function Home() {
   return (

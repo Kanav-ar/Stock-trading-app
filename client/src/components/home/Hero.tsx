@@ -15,7 +15,7 @@ export default function Hero() {
             className="w-full max-w-3xl rounded-2xl"
           />
         </div>
-        <div className="flex flex-col gap-8 items-center text-gray-700 px-4 pt-8 dark:text-white">
+        <div className="flex flex-col gap-8 items-center px-4 pt-8">
           <h1 className="font-semibold text-3xl">Invest in everything</h1>
           <p className="text-xl text-center">
             Online platform to invest in stocks, derivatives, mutual funds,

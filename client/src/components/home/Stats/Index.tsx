@@ -8,7 +8,7 @@ export default function Stats() {
   const { theme } = useTheme();
   return (
     <>
-      <div className="flex md:flex-row flex-col text-gray-700 dark:text-white px-4 py-16">
+      <div className="flex md:flex-row flex-col">
         <div className="flex flex-col gap-12 flex-1">
           <h1 className="text-3xl font-semibold md:mb-4">
             Trust with Confidence
